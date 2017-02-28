@@ -49,171 +49,67 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>${exec.maven.plugin.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <mainClass>${main.class}</mainClass>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
     <profiles>
         <profile>
             <id>c1q2</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>exec-maven-plugin</artifactId>
-                        <version>${exec.maven.plugin.version}</version>
-                        <executions>
-                            <execution>
-                                <goals>
-                                    <goal>java</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                        <configuration>
-                            <mainClass>com.calmsir.java8fti.chapter1.Question2</mainClass>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
+            <properties>
+                <main.class>com.calmsir.java8fti.chapter1.Question2</main.class>
+            </properties>
         </profile>
-
         <profile>
             <id>c1q3</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>exec-maven-plugin</artifactId>
-                        <version>${exec.maven.plugin.version}</version>
-                        <executions>
-                            <execution>
-                                <goals>
-                                    <goal>java</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                        <configuration>
-                            <mainClass>com.calmsir.java8fti.chapter1.Question3</mainClass>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
+            <properties>
+                <mainClass>com.calmsir.java8fti.chapter1.Question3</mainClass>
+            </properties>
         </profile>
-
         <profile>
             <id>c1q4</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>exec-maven-plugin</artifactId>
-                        <version>${exec.maven.plugin.version}</version>
-                        <executions>
-                            <execution>
-                                <goals>
-                                    <goal>java</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                        <configuration>
-                            <mainClass>com.calmsir.java8fti.chapter1.Question4</mainClass>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
+            <properties>
+                <mainClass>com.calmsir.java8fti.chapter1.Question4</mainClass>
+            </properties>
         </profile>
-
         <profile>
             <id>c1q6</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>exec-maven-plugin</artifactId>
-                        <version>${exec.maven.plugin.version}</version>
-                        <executions>
-                            <execution>
-                                <goals>
-                                    <goal>java</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                        <configuration>
-                            <mainClass>com.calmsir.java8fti.chapter1.Question6</mainClass>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
+            <properties>
+                <mainClass>com.calmsir.java8fti.chapter1.Question6</mainClass>
+            </properties>
         </profile>
-
         <profile>
             <id>c1q7</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>exec-maven-plugin</artifactId>
-                        <version>${exec.maven.plugin.version}</version>
-                        <executions>
-                            <execution>
-                                <goals>
-                                    <goal>java</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                        <configuration>
-                            <mainClass>com.calmsir.java8fti.chapter1.Question7</mainClass>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
+            <properties>
+                <mainClass>com.calmsir.java8fti.chapter1.Question7</mainClass>
+            </properties>
         </profile>
-
         <profile>
             <id>c1q8</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>exec-maven-plugin</artifactId>
-                        <version>${exec.maven.plugin.version}</version>
-                        <executions>
-                            <execution>
-                                <goals>
-                                    <goal>java</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                        <configuration>
-                            <mainClass>com.calmsir.java8fti.chapter1.Question8</mainClass>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
+            <properties>
+                <mainClass>com.calmsir.java8fti.chapter1.Question8</mainClass>
+            </properties>
         </profile>
-
         <profile>
             <id>c1q9</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>exec-maven-plugin</artifactId>
-                        <version>${exec.maven.plugin.version}</version>
-                        <executions>
-                            <execution>
-                                <goals>
-                                    <goal>java</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                        <configuration>
-                            <mainClass>com.calmsir.java8fti.chapter1.Question9</mainClass>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
+            <properties>
+                <mainClass>com.calmsir.java8fti.chapter1.Question9</mainClass>
+            </properties>
         </profile>
     </profiles>
-
 
 </project>
